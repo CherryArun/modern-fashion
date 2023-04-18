@@ -1,0 +1,370 @@
+{% load static %}
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Digital Shopping</title>
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="{% static 'assets/css/style-starter.css' %}">
+  <!-- Template CSS -->
+  <link href="//fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap" rel="stylesheet">
+  <link href="//fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900&display=swap" rel="stylesheet">
+  <!-- Template CSS -->
+
+</head>
+<body>
+<!--w3l-banner-slider-main-->
+<section class="w3l-banner-slider-main">
+	<div class="top-header-content">
+		<header class="tophny-header">
+			<div class="container-fluid">
+				<div class="top-right-strip row">
+					<!--/left-->
+					<div class="top-hny-left-content col-lg-6 pl-lg-0">
+						
+					</div>
+					<!--//left-->
+					<!--/right-->
+					
+					<!--//right-->
+					
+				</div>
+			</div>
+			<!--/nav-->
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container-fluid serarc-fluid">
+					<a class="navbar-brand" href="{% url 'home' %}">
+						 Modern Fashion <span class="lohny">R</span>ecommendation</a>
+					<!-- if logo is image enable this   
+							<a class="navbar-brand" href="#index.html">
+								<img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+							</a> -->
+					<!--/search-right-->
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon fa fa-bars"> </span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="{% url 'home' %}">Home</a>
+							</li>
+							<li class="nav-item">
+                  <a class="nav-link" href="{% url 'product_list' %}">Product</a>
+                </li>
+							<li class="nav-item">
+								<a class="nav-link" href="{% url 'register' %}">Register</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="{% url 'user_login' %}">Login</a>
+							  </li>
+<li class="nav-item">
+                  <a class="nav-link" href="{% url 'all_category' %}">Category</a>
+                </li>
+               
+
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'try_now' %}">Try It</a>
+                </li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="/admin/">Admin Login</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</nav>
+			<!--//nav-->
+		</header>
+		<div class="bannerhny-content">
+
+			<!--/banner-slider-->
+			<div class="content-baner-inf">
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="container">
+								<div class="carousel-caption">
+									<h3>Women's
+										Fashion
+										<br>50% Off</h3>
+									<a href="{% url 'product_list' %}" class="shop-button btn">
+										Shop Now
+									</a>
+
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item item2">
+							<div class="container">
+								<div class="carousel-caption">
+									<h3>Men's
+										Fashion
+										<br>60% Off</h3>
+									<a href="{% url 'product_list' %}" class="shop-button btn">
+										Shop Now
+									</a>
+
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item item3">
+							<div class="container">
+								<div class="carousel-caption">
+									<h3>Women's
+										Fashion
+										<br>50% Off</h3>
+									<a href="{% url 'product_list' %}" class="shop-button btn">
+										Shop Now
+									</a>
+
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item item4">
+							<div class="container">
+								<div class="carousel-caption">
+									<h3>Men's
+										Fashion
+										<br>60% Off</h3>
+									<a href="{% url 'product_list' %}" class="shop-button btn">
+										Shop Now
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<!--//banner-slider-->
+			<!--//banner-slider-->
+			<div class="right-banner">
+				<div class="right-1">
+					<h4>
+						Men's
+						Fashion
+						<br>50% Off</h4>
+				</div>
+			</div>
+
+		</div>
+
+</section>
+
+
+
+     
+<section class="w3l-video-6">
+	<!-- /video-6-->
+	<div class="video-66-info">
+		<div class="container-fluid">
+			<div class="video-grids-info row">
+				<div class="video-gd-right col-lg-8">
+					<div class="video-inner text-center">
+								<!--popup-->
+									<a class="play-button btn popup-with-zoom-anim" href="#small-dialog">
+											<span class="fa fa-play" aria-hidden="true"></span>
+									</a>
+									<div id="small-dialog" class="mfp-hide">
+										<div class="search-top notify-popup">
+												<iframe src="https://player.vimeo.com/video/246139491" frameborder="0"
+												allow="autoplay; fullscreen" allowfullscreen></iframe>
+										</div>
+									</div>
+									<!--//popup-->
+					      </div>
+				  </div>
+				<div class="video-gd-left col-lg-4 p-lg-5 p-4">
+					<div class="p-xl-4 p-0 video-wrap">
+						<h3 class="hny-title text-left">All Branded Women's Bags are Flat <span>30% Discount</span>
+						</h3>
+						<p>Visit our shop to see amazing creations from our designers.</p>
+						<a href="{% url 'product_list' %}" class="read-more btn">
+							Shop Now
+						</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //video-6-->
+<section class="w3l-ecommerce-main">
+	<!-- /products-->
+	<div class="ecom-contenthny py-5">
+		<div class="container py-lg-5">
+			<h3 class="hny-title mb-0 text-center">Shop With <span>Us</span></h3>
+			<p class="text-center">Handpicked Favourites just for you</p>
+			<!-- /row-->
+			<div class="ecom-products-grids row mt-lg-5 mt-3">
+				{% for i in product_detail %}
+				<div class="col-lg-3 col-6 product-incfhny mt-4">
+					<div class="product-grid2 transmitv">
+						<div class="product-image2">
+							<a href="#">
+								<img class="pic-1 img-fluid" src="/media/{{i.image}}">
+								<img class="pic-2 img-fluid" src="/media/{{i.image}}">
+							</a>
+							<div class="transmitv single-item">
+									<a href="{% url 'add_to_cart' pk=i.id %}?price={{i.price}}&fid={{i.user_id_id}}" class="transmitv-cart ptransmitv-cart add-to-cart">
+										Add to Cart
+									</a>
+								
+							</div>
+						</div>
+						<div class="product-content">
+							<h3 class="title">{{i.product_name}}</h3>
+							<span class="price">Rs {{i.price}}</span>
+						</div>
+					</div>
+				</div>
+				
+				{% endfor %}
+				</div>
+
+
+			</div>
+			<!-- //row-->
+		</div>
+	</div>
+</section>
+
+
+  <section class="w3l-footer-22">
+      <!-- footer-22 -->
+      <div class="footer-hny py-5">
+          <div class="container py-lg-5">
+              <div class="text-txt row">
+               
+                  <div class="columns col-lg-6 text-lg-right">
+                      <p>© 2023 Digital Shopping. All rights reserved.
+                      </p>
+                  </div>
+                  <button onclick="topFunction()" id="movetop" title="Go to top">
+                      <span class="fa fa-angle-double-up"></span>
+                  </button>
+              </div>
+          </div>
+      </div>
+      <!-- //titels-5 -->
+      <!-- move top -->
+
+      <script>
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function () {
+              scrollFunction()
+          };
+
+          function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  document.getElementById("movetop").style.display = "block";
+              } else {
+                  document.getElementById("movetop").style.display = "none";
+              }
+          }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+          }
+      </script>
+      <!-- /move top -->
+  </section>
+
+
+  </body>
+
+  </html>
+
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/jquery-2.1.4.min.js"></script>
+<!--/login-->
+<script>
+		$(document).ready(function () {
+			$(".button-log a").click(function () {
+				$(".overlay-login").fadeToggle(200);
+				$(this).toggleClass('btn-open').toggleClass('btn-close');
+			});
+		});
+		$('.overlay-close1').on('click', function () {
+			$(".overlay-login").fadeToggle(200);
+			$(".button-log a").toggleClass('btn-open').toggleClass('btn-close');
+			open = false;
+		});
+  </script>
+<!--//login-->
+<script>
+// optional
+		$('#customerhnyCarousel').carousel({
+				interval: 5000
+    });
+  </script>
+ <!-- cart-js -->
+ <script src="assets/js/minicart.js"></script>
+ <script>
+     transmitv.render();
+
+     transmitv.cart.on('transmitv_checkout', function (evt) {
+         var items, len, i;
+
+         if (this.subtotal() > 0) {
+             items = this.items();
+
+             for (i = 0, len = items.length; i < len; i++) {}
+         }
+     });
+ </script>
+ <!-- //cart-js -->
+<!--pop-up-box-->
+<script src="assets/js/jquery.magnific-popup.js"></script>
+<!--//pop-up-box-->
+<script>
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+      fixedContentPos: false,
+      fixedBgPos: true,
+      overflowY: 'auto',
+      closeBtnInside: true,
+      preloader: false,
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+
+  });
+</script>
+<!--//search-bar-->
+<!-- disable body scroll which navbar is in active -->
+
+<script>
+  $(function () {
+    $('.navbar-toggler').click(function () {
+      $('body').toggleClass('noscroll');
+    })
+  });
+</script>
+<!-- disable body scroll which navbar is in active -->
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+

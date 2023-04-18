@@ -1,0 +1,82 @@
+{% include 'header.html' %}
+
+
+<div class="wrap container" >
+	<form method="GET" style="margin-top: 30px;">{% csrf_token %}
+		<div class="form-group">
+			<div class="form-row">
+		<div class="col-md-8">
+			<input type="text" name="search" class="form-control" placeholder="Search Product...">
+		</div>
+		<div class="col-md-4">
+			<input type="submit" class="btn btn-primary" value="Search Product" style="background: #ff7315 !important;border-color: #ff7315;">
+		</div>
+		</div>
+	</div>
+	</form>
+	<section class="w3l-ecommerce-main">
+	<!-- /products-->
+	<div class="ecom-contenthny py-5">
+		<div class="container py-lg-5">
+			<h3 class="hny-title mb-0 text-center">Shop With <span>Us</span></h3>
+			<p class="text-center">Handpicked Favourites just for you</p>
+			<!-- /row-->
+			<div class="ecom-products-grids row mt-lg-5 mt-3">
+				{% for i in product_detail %}
+				<div class="col-lg-3 col-6 product-incfhny mt-4">
+					<div class="product-grid2 transmitv">
+						<div class="product-image2">
+							<a href="#">
+								<img class="pic-1 img-fluid" src="/media/{{i.image}}">
+								<img class="pic-2 img-fluid" src="/media/{{i.image}}">
+							</a>
+							<div class="transmitv single-item">
+									<a href="{% url 'add_to_cart' pk=i.id %}?price={{i.price}}&fid={{i.user_id_id}}" class="transmitv-cart ptransmitv-cart add-to-cart">
+										Add to Cart
+									</a>
+								
+							</div>
+						</div>
+						<div class="product-content">
+							<h3 class="title">{{i.product_name}}</h3>
+							<span class="price">Rs {{i.price}}</span>
+						</div>
+					</div>
+				</div>
+				
+				{% endfor %}
+				{% if request.GET.search %}
+				{% for i in detail %}
+				<div class="col-lg-3 col-6 product-incfhny mt-4">
+					<div class="product-grid2 transmitv">
+						<div class="product-image2">
+							<a href="#">
+								<img class="pic-1 img-fluid" src="/media/{{i.image}}">
+								<img class="pic-2 img-fluid" src="/media/{{i.image}}">
+							</a>
+							<div class="transmitv single-item">
+									<a href="{% url 'add_to_cart' pk=i.id %}?price={{i.price}}&fid={{i.user_id_id}}" class="transmitv-cart ptransmitv-cart add-to-cart">
+										Add to Cart
+									</a>
+								
+							</div>
+						</div>
+						<div class="product-content">
+							<h3 class="title">{{i.product_name}}</h3>
+							<span class="price">Rs {{i.price}}</span>
+						</div>
+					</div>
+				</div>
+				
+				{% endfor %}
+				{% endif %}
+				</div>
+
+
+			</div>
+			<!-- //row-->
+		</div>
+	</div>
+</section>
+</div>
+{% include 'footer.html' %}
